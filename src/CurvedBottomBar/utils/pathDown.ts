@@ -26,7 +26,7 @@ const lineBorder = (width: number, height: number) => {
     .y((d: { y: any }) => d.y)
     .curve(shape.curveBasis)([
     // right
-    { x: width / 2, y: 0 },
+    { x: width / 1.58, y: 0 },
     { x: width - scale(20), y: 0 },
     { x: width - scale(10), y: scale(2) },
     { x: width - scale(2), y: scale(10) },
@@ -43,7 +43,7 @@ const lineBorder = (width: number, height: number) => {
     { x: 0 + scale(2), y: scale(10) },
     { x: 0 + scale(10), y: scale(2) },
     { x: 0 + scale(20), y: 0 },
-    { x: width / 2, y: 0 },
+    { x: width / 2.72, y: 0 },
   ]);
 
   return border;
