@@ -38,6 +38,8 @@ const BottomBarComponent: (
       renderCircle,
       borderTopLeftRight = false,
       shadowStyle,
+      strokeWidth,
+      stroke,
     } = props;
 
     const [itemLeft, setItemLeft] = useState<any[]>([]);
@@ -237,6 +239,8 @@ const BottomBarComponent: (
             height={scale(getTabbarHeight) + (type === 'DOWN' ? 0 : scale(30))}
             bgColor={bgColor}
             path={d}
+            strokeWidth={strokeWidth}
+            stroke={stroke}
           />
           {_renderTabContainer(props)}
         </View>
